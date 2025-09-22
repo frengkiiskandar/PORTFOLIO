@@ -3,6 +3,7 @@ import { Envelope, MapPin, Phone } from '@phosphor-icons/react'
 import Maps from './Maps'
 import SuksesKirimPesan from '../Assets/SweetAlert/SuksesKirimPesan'
 import Line from './Line'
+import genders from '../Assets/Json/Gender.json'
 
 import { IoIosCheckmarkCircle  } from "react-icons/io";
 
@@ -13,7 +14,8 @@ const Contact = () => {
 
     const [name, setName] = useState()
     const [email, setEmail] = useState()
-    const [phone, setPhone] = useState()
+    const [gender, setGender] = useState('')
+    // const [phone, setPhone] = useState()
     const [message, setMessage] = useState()
     const [loading, setLoading] = useState(false)
     const [isSuccesSendFeedback, setIsSuccessSendFeedback] = useState(false)
@@ -25,7 +27,7 @@ const Contact = () => {
             setName('')
             setEmail('')
             setMessage('')
-            setPhone('')
+            setGender('')
             setLoading(false)
             setIsSuccessSendFeedback(true)
         }, 2000);
@@ -93,7 +95,7 @@ const Contact = () => {
                 <div className='flex flex-wrap  rounded-2xl shadow-xl bg-gray-50 py-2 mt-5'>
                     {/* 1 */}
                     <div className='px-7 lg:px-16 py-5 '>
-                        <form className=' flex flex-col justify-start items-start gap-5 text-sm lg:text-base  w-2[70%] contact' onSubmit={handleClickSendFeedback}>
+                        <form className=' flex flex-col justify-start items-start gap-5 text-sm lg:text-base contact' onSubmit={handleClickSendFeedback}>
                         <div className='flex flex-wrap justify-between gap-5 w-full'>
                             {/* <label htmlFor="">Full Name*</label> */}
                                 <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Full Name*'
@@ -104,9 +106,21 @@ const Contact = () => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required />
-                                <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Phone Number*'
+                                <select
+                                    value={gender}
+                                    onChange={(e) => setGender(e.target.value)}
+                                    className="w-full lg:w-auto outline-none border-b-[1px] py-3 text-gray-500 border-gray-500 bg-gray-50"
+                                    required
+                                    >
+                                    <option value="" disabled>Choose Gender*</option>
+                                    {genders.genders.map((item, index) => (
+                                        <option key={index} value={item.name} placeholder="Choose Gender*">{item.name}</option>
+                                    ))}
+                                </select>
+
+                                {/* <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Phone Number*'
                                 value={phone}
-                                onChange={(e) => setPhone(e.target.value)} />
+                                onChange={(e) => setPhone(e.target.value)} /> */}
                         </div>
                         <div className='w-full'>
                                 <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50 w-full' placeholder='Message'

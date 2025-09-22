@@ -1,0 +1,84 @@
+{
+"genders": [
+    {
+    "name": "Male",
+    "description": "Traditionally associated with biological males and masculinity."
+    },
+    {
+    "name": "Female",
+    "description": "Traditionally associated with biological females and femininity."
+    },
+    {
+    "name": "Non-Binary",
+    "description": "A gender identity that is not exclusively male or female. It can be a combination of both, neither, or something else."
+    },
+    {
+    "name": "Genderqueer",
+    "description": "A gender identity that falls outside of the traditional male/female binary. Often used interchangeably with non-binary."
+    },
+    {
+    "name": "Genderfluid",
+    "description": "A gender identity that is not fixed and can change over time or depending on the situation."
+    },
+    {
+    "name": "Agender",
+    "description": "A person who does not identify with any gender or has no gender."
+    },
+    {
+    "name": "Bigender",
+    "description": "A person who identifies with two genders, either simultaneously or switching between them."
+    },
+    {
+    "name": "Two-Spirit",
+    "description": "A term used by some Indigenous cultures in North America to describe a person who embodies both masculine and feminine qualities, or who has a unique gender role in their society."
+    },
+    {
+    "name": "Hijra",
+    "description": "A third gender recognized in South Asia, particularly in India, Pakistan, and Bangladesh. Hijras have a distinct cultural and social role."
+    },
+    {
+    "name": "Demiboy",
+    "description": "A gender identity that is partially, but not entirely, male."
+    },
+    {
+    "name": "Demigirl",
+    "description": "A gender identity that is partially, but not entirely, female."
+    },
+    {
+    "name": "Neutrois",
+    "description": "A non-binary gender identity where a person feels neutral or has a lack of gender."
+    },
+    {
+    "name": "Androgynous",
+    "description": "A gender expression that is a blend of both masculine and feminine traits, or neither."
+    },
+    {
+    "name": "Cisgender",
+    "description": "A person whose gender identity matches the sex they were assigned at birth."
+    },
+    {
+    "name": "Transgender",
+    "description": "A person whose gender identity differs from the sex they were assigned at birth."
+    },
+    {
+    "name": "Pangender",
+    "description": "A person who identifies with all genders, or has an expansive gender identity."
+    },
+    {
+    "name": "Skoliosexual",
+    "description": "A sexual attraction to non-binary people or individuals who don't fit into the traditional male/female binary."
+    },
+    {
+    "name": "Maverique",
+    "description": "A non-binary gender identity that is independent from both male and female, and exists outside of the traditional binary."
+    },
+    {
+    "name": "Autigender",
+    "description": "A gender identity that is deeply connected to one's experience of being autistic."
+    },
+    {
+    "name": "Quoigender",
+    "description": "A gender identity that cannot be fully described or understood."
+    }
+]
+}

@@ -3,7 +3,7 @@ import HomePage from '../Pages/HomePage'
 import Loading from '../Assets/SweetAlert/Loading' // pastikan komponen Loading ada
 
 const MainLayout = () => {
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         // Menunggu 2 detik sebelum mengubah loading menjadi false
