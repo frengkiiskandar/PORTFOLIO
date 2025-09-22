@@ -2,6 +2,7 @@ import  { useEffect, useState } from 'react'
 import { Envelope, MapPin, Phone } from '@phosphor-icons/react'
 import Maps from './Maps'
 import SuksesKirimPesan from '../Assets/SweetAlert/SuksesKirimPesan'
+import GagalKirimPesan from '../Assets/SweetAlert/GagalKirimPesan'
 import Line from './Line'
 import genders from '../Assets/Json/Gender.json'
 
@@ -19,9 +20,17 @@ const Contact = () => {
     const [message, setMessage] = useState()
     const [loading, setLoading] = useState(false)
     const [isSuccesSendFeedback, setIsSuccessSendFeedback] = useState(false)
+    const [isFailSendFeedback, setIsFailSendFeedback] = useState(false)
 
     const handleClickSendFeedback = (e) => {
         e.preventDefault()
+
+        if (gender !== "Male" && gender !== "Female") {
+            setLoading(false)
+            setIsFailSendFeedback(true)
+            return // stop proses, jangan lanjut
+        }
+
         setLoading(true)
         setTimeout(() => {
             setName('')
@@ -31,7 +40,6 @@ const Contact = () => {
             setLoading(false)
             setIsSuccessSendFeedback(true)
         }, 2000);
-        console.log('oke');
     }
 
     useEffect(() => {
@@ -92,48 +100,50 @@ const Contact = () => {
                 {isSuccesSendFeedback && (
                     <SuksesKirimPesan />
                 )}
+                {isFailSendFeedback && (
+                    <GagalKirimPesan />
+                )}
                 <div className='flex flex-wrap  rounded-2xl shadow-xl bg-gray-50 py-2 mt-5'>
                     {/* 1 */}
                     <div className='px-7 lg:px-16 py-5 '>
                         <form className=' flex flex-col justify-start items-start gap-5 text-sm lg:text-base contact' onSubmit={handleClickSendFeedback}>
-                        <div className='flex flex-wrap justify-between gap-5 w-full'>
-                            {/* <label htmlFor="">Full Name*</label> */}
-                                <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Full Name*'
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                                required />
-                                <input type="email" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Email*'
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required />
-                                <select
-                                    value={gender}
-                                    onChange={(e) => setGender(e.target.value)}
-                                    className="w-full lg:w-auto outline-none border-b-[1px] py-3 text-gray-500 border-gray-500 bg-gray-50"
-                                    required
-                                    >
-                                    <option value="" disabled>Choose Gender*</option>
-                                    {genders.genders.map((item, index) => (
-                                        <option key={index} value={item.name} placeholder="Choose Gender*">{item.name}</option>
-                                    ))}
-                                </select>
-
-                                {/* <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Phone Number*'
-                                value={phone}
-                                onChange={(e) => setPhone(e.target.value)} /> */}
-                        </div>
-                        <div className='w-full'>
-                                <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50 w-full' placeholder='Message'
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
-                                aria-required />
-                        </div>
-                            <button type='submit' className={`send px-2 py-3 w-40 text-sm rounded-full bg-gradient-to-b from-primarySec to-primary shadow-2xl hover:from-primary hover:to-[#11856e] shadow-primarySec text-white  ${loading ? 'cursor-not-allowed' : ''}`}>
-                                {loading ? (<span className="loading loading-spinner loading-xs"></span>) : (
-                                    <p>Send Message</p>
-                                )}
-                            </button>
-                    </form>
+                            <div className='flex flex-wrap justify-between gap-5 w-full'>
+                                {/* <label htmlFor="">Full Name*</label> */}
+                                    <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Full Name*'
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                    required />
+                                    <input type="email" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Email*'
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required />
+                                    <select
+                                        value={gender}
+                                        onChange={(e) => setGender(e.target.value)}
+                                        className="w-full lg:w-auto outline-none border-b-[1px] py-3 text-gray-500 border-gray-500 bg-gray-50"
+                                        required
+                                        >
+                                        <option value="" disabled>Choose Gender*</option>
+                                        {genders.genders.map((item, index) => (
+                                            <option key={index} value={item.name} placeholder="Choose Gender*">{item.name}</option>
+                                        ))}
+                                    </select>
+                                    {/* <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Phone Number*'
+                                    value={phone}
+                                    onChange={(e) => setPhone(e.target.value)} /> */}
+                            </div>
+                            <div className='w-full'>
+                                    <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50 w-full' placeholder='Message'
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                    aria-required />
+                            </div>
+                                <button type='submit' className={`send px-2 py-3 w-40 text-sm rounded-full bg-gradient-to-b from-primarySec to-primary shadow-2xl hover:from-primary hover:to-[#11856e] shadow-primarySec text-white  ${loading ? 'cursor-not-allowed' : ''}`}>
+                                    {loading ? (<span className="loading loading-spinner loading-xs"></span>) : (
+                                        <p>Send Message</p>
+                                    )}
+                                </button>
+                        </form>
                         <div className='pt-10 text-gray-500 text-sm lg:text-base'>
                             <p className='mb-7'>You can also contact me through the link below</p>
                             {/* fastwork */}
