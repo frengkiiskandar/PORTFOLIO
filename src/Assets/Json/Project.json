@@ -36,6 +36,15 @@
         "date": "December, 2024"
     },
     {
+        "name" : "E-Monitoring",
+        "image" : "monitoring.png",
+        "category"  : "Fullstack",
+        "job": "E-Monitoring",
+        "link": "#",
+        "status": "local server",
+        "date": "November, 2025"
+    },
+    {
         "name": "Landing Page",
         "image": "dibimbing.png",
         "category": "Frontend",
