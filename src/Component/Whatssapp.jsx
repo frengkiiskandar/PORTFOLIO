@@ -78,7 +78,10 @@ const Whatsapp = () => {
                         </div>
                         <div className="p-6 ">
                             <div className="whatsappEffect2 bg-white text-black text-sm flex flex-col justify-start items-start gap-2 mb-52 ">
-                                <p className="text-sm">Frengki</p>
+                                <div className="flex justify-start items-center gap-2">
+                                    <p className="text-sm">Frengki</p>
+                                    <p className="text-[10px] bg-gray-200 rounded-3xl px-3 text-gray-500">bot</p>
+                                </div>
                                 <p className="px-2 py-2 bg-slate-100 text-[11px] rounded-lg w-full"> Hi There, Do you have any problem ?</p>
                             </div>
                             <div className="whatsappEffect2 flex flex-col justify-start items-start gap-2 text-[11px]">
@@ -87,7 +90,7 @@ const Whatsapp = () => {
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                     placeholder="We're here to help. Type your message here.."
-                                    className="w-full border-b-[1px] border-b-primary px-2 py-3 font-light outline-none"
+                                    className="w-full border-b-[1px] border-b-primary px-2 py-3 font-light outline-none bg-white"
                                 />
                             {/* <div className= " bg-primary w-full h-[1px] rounded-full"></div> */}
                                 <button

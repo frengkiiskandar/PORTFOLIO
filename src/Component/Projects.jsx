@@ -15,6 +15,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import { CiShare1 } from "react-icons/ci";
 
 import ScrollTrigger from "gsap/src/ScrollTrigger";
 import gsap from "gsap";
@@ -45,7 +46,7 @@ const Projects = () => {
    }, []);
    return (
       <>
-         <section className="  px-5 lg:px-24 mt-10" style={{backgroundImage : "url('https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur2_pfolgz.png')", backgroundSize:"50%", backgroundPosition:"center", backgroundRepeat:"no-repeat" }}>
+         <section className="  px-5 lg:px-24 mt-10">
             <div className="w-full flex flex-col justify-center items-center gap-2 lg:gap-6 pb-10 relative ">
                <h1 className="font-semibold text-center text-xl lg:text-2xl xl:text-4xl text-oren -tracking-tight w-full head">
                      Project and <span className='text-primary'>Certificate</span>
@@ -53,7 +54,7 @@ const Projects = () => {
                <Line />
                {/* <img src={task} alt="" className="absolute top-2/4 -right-40 w-[15rem] hidden lg:block z-10"/> */}
             </div>
-            <div className="flex justify-center items-center gap-4 xl:gap-10 flex-wrap w-full ">
+            <div className="px-0 md:px-10 xl:px-20 flex justify-center items-center gap-4 xl:gap-10 flex-wrap w-full">
                {/* item project */}
                {project.map((value, index) => {
                   return (
@@ -66,17 +67,21 @@ const Projects = () => {
                                        hidden 
                                        hover:block 
                                        group-hover:flex
-                                       xl:!hidden">
+                                       ">
                                           <div className="text-black my-5 font-semibold text-base">{value.name} </div>
-                              <div className="bg-primary px-4 py-2 rounded-md text-center text-white">
+                              <div className="bg-white px-4 py-2 rounded-md text-center text-black">
                                  {value.link === "#" ? (
                                     <button className="cursor-not-allowed " onClick={(e)=> e.preventDefault()}>
                                        <a href={value.link} target="blank" >Not Allowed</a>
                                     </button>
                                  ) : (
-                                    <button >
-                                       <a href={value.link} target="blank" >View Demo</a>
+                                    <a href={value.link} target="blank"  >
+                                       <button className="flex justify-center items-center gap-3">
+                                          <CiShare1 size={20}/>
+                                          <p>View Project</p>
                                     </button>
+                                    </a>
+                                    
                                  )}
                               </div>
                            </div>
