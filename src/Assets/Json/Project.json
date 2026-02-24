@@ -79,14 +79,5 @@
         "job": "Book Buzz",
         "status": "local server",
         "date": "Mei, 2023"
-    },
-    {
-        "name": "Landing Page",
-        "image" : "portof.png",
-        "category"  : "Frontend",
-        "link": "#",
-        "job": "Landing Page",
-        "status": "local",
-        "date": "February, 2024"
     }
 ]
