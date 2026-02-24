@@ -18,6 +18,15 @@
         "date": "August, 2024"
     },
     {
+        "name" : "Surya Insani",
+        "image": "suryainsani.png",
+        "category"  : "Fullstack",
+        "link": "https://rssuryainsani.com",
+        "job": "Website",
+        "status": "hosted",
+        "date": "Jan, 2026"
+    },
+    {
         "name" : "Homecare",
         "image": "rijall.png",
         "category"  : "Fullstack",
@@ -75,9 +84,9 @@
         "name": "Landing Page",
         "image" : "portof.png",
         "category"  : "Frontend",
-        "link": "https://frengkyportfolio-git-main-frankierockabillys-projects.vercel.app/",
+        "link": "#",
         "job": "Landing Page",
-        "status": "hosted",
+        "status": "local",
         "date": "February, 2024"
     }
 ]

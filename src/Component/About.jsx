@@ -99,12 +99,12 @@ const About = () => {
             </div>
             <div className="flex flex-wrap justify-center items-start gap-1 py-5 relative ">
                {/* letakkan gambar disini ya guys */}
-               <div className="w-[15rem] h-[25rem] lg:w-[43rem] lg:h-auto aboutbox hidden xl:block absolute right-0 opacity-45">
+               {/* <div className="w-[15rem] h-[25rem] lg:w-[43rem] lg:h-auto aboutbox hidden xl:block absolute right-0 opacity-45">
                   <img
                      src='https://res.cloudinary.com/dplikeeby/image/upload/v1758180582/dd_wfmzzc.png'
                      className="rounded-xl w-full h-auto object-cover opacity-40" alt="frengky"
                   />
-               </div>
+               </div> */}
                <div className="flex flex-col justify-start items-start gap-8  xl:w-[35rem] 2xl:w-[60rem] text-black ">
                   <div>
                         <h1 className="font-semibold text-start text-xl xl:text-3xl py-3 text-gray-500 -tracking-tight w-full head">
