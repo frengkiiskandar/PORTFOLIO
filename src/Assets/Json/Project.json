@@ -36,6 +36,15 @@
         "date": "July, 2023"
     },
     {
+        "name" : "Sistem Pakar Diagnosa Penyakit Tumbuhan",
+        "image": "sistempakar.png",
+        "category"  : "Fullstack",
+        "link": "#",
+        "job": "Sistem Pakar",
+        "status": "local",
+        "date": "March, 2026"
+    },
+    {
         "name" : "Nexcent UI",
         "image" : "nexcent.jpg",
         "category"  : "Frontend",
