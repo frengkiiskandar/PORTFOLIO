@@ -168,9 +168,9 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                   <Projects />
                </div>
 
-               <div>
+               {/* <div>
                   <Testimonial />
-               </div>
+               </div> */}
 
                <div ref={contactRef}>
                   <Contact />
