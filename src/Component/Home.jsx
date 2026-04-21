@@ -3,7 +3,7 @@ import Line from "./Line";
 import Header from "./Header";
 import Projects from "./Projects";
 import About from "./About";
-import Testimonial from "./Testimonial";
+// import Testimonial from "./Testimonial";
 import Whatsapp from "./Whatssapp";
 import Footer from "./Footer";
 import Contact from "./Contact";
