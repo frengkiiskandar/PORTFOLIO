@@ -45,6 +45,15 @@
         "date": "March, 2026"
     },
     {
+        "name" : "Fen Tax Strategy",
+        "image": "fentax.webp",
+        "category"  : "Frontend",
+        "link": "https://fentax.vercel.app/",
+        "job": "Perpajakan",
+        "status": "hosted",
+        "date": "june, 2026"
+    },
+    {
         "name" : "Nexcent UI",
         "image" : "nexcent.jpg",
         "category"  : "Frontend",
