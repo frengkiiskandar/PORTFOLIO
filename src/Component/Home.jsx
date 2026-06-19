@@ -86,9 +86,9 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
 
                {/* hero section */}
                <section className="lg:px-20 lg:py-5 bg-white relative ">
-                  <div className="absolute top-32 right-32 z-0 w-[42rem] h-[42rem] hidden lg:block ">
+                  {/* <div className="absolute top-32 right-32 z-0 w-[42rem] h-[42rem] hidden lg:block ">
                      <img src="https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png" alt="" className="w-full h-full opacity-80"/>
-                  </div>
+                  </div> */}
                   
                   <div className="relative flex flex-grow px-7 pb-9 lg:px-36 bg-no-repeat overflow-visible backdrop-blur-3xl bg-opacity-55 lg: bg-contain bg-center ">
                   {/* what we do */}
@@ -148,11 +148,11 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                               </div>
                            </div>
                         </div>
-                        <div className="hidden xl:block absolute right-0 -bottom-24  xl:top-12 xl:right-0 2xl:top-56 justify-center items-center overflow-hidden framesection ">
+                        <div className="hidden xl:block absolute right-0 -bottom-24 xl:top-12 xl:right-0 2xl:top-56 justify-center items-center framesection ">
                            <img
                               src={tablet}
                               alt=""
-                              className="w-[20rem] h-[15rem] xl:h-auto xl:w-[25rem] 2xl:w-[45rem] opacity-20 xl:opacity-100"
+                              className="w-[20rem] h-[15rem] xl:h-auto xl:w-[25rem] 2xl:w-[40rem] opacity-20 xl:opacity-100"
                            />
                         </div>
                      </div>

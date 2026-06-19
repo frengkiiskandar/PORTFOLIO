@@ -97,15 +97,15 @@ const About = () => {
                <Line />
                <img src={pattern} alt="" className='w-[60rem] absolute top-1/2 right-1/2 transform translate-x-1/2 opacity-15 blur-sm' />
             </div>
-            <div className="flex flex-wrap justify-center items-start gap-1 py-5 relative ">
+            <div className="lg:px-[15%] flex flex-wrap justify-between items-start gap-20 py-5 relative overflow-hidden">
                {/* letakkan gambar disini ya guys */}
-               {/* <div className="w-[15rem] h-[25rem] lg:w-[43rem] lg:h-auto aboutbox hidden xl:block absolute right-0 opacity-45">
+               {/* <div className="w-[15rem] h-[25rem] lg:w-[25rem] lg:h-auto aboutbox hidden xl:block absolute right-0 opacity-45">
                   <img
-                     src='https://res.cloudinary.com/dplikeeby/image/upload/v1758180582/dd_wfmzzc.png'
-                     className="rounded-xl w-full h-auto object-cover opacity-40" alt="frengky"
+                     src='freprogram.webp'
+                     className="rounded-xl w-full h-auto object-cover" alt="frengky"
                   />
                </div> */}
-               <div className="flex flex-col justify-start items-start gap-8  xl:w-[35rem] 2xl:w-[60rem] text-black ">
+               <div className="flex flex-col justify-start items-start gap-8  xl:w-[30rem] 2xl:w-[55rem] text-black">
                   <div>
                         <h1 className="font-semibold text-start text-xl xl:text-3xl py-3 text-gray-500 -tracking-tight w-full head">
                         Something about me
