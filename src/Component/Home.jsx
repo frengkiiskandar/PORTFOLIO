@@ -8,7 +8,7 @@ import Whatsapp from "./Whatssapp";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import TypingText from "./ChildComponent/TypingText";
-import tablet from '../Assets/Image/tablet.png'
+import tablet from '../Assets/Image/tablet.webp'
 import gsap from "gsap";
 
 // icon 
@@ -93,7 +93,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                   <div className="relative flex flex-grow px-7 pb-9 lg:px-36 bg-no-repeat overflow-visible backdrop-blur-3xl bg-opacity-55 lg: bg-contain bg-center ">
                   {/* what we do */}
                      <div className="relative flex flex-col lg:flex-row justify-start items-start gap-5 w-full" >
-                        <div className="flex flex-col justify-start items-start gap-2 h-full max-w-[50rem] pt-20 pb-5 lg:pt-44 lg:pb-10">
+                        <div className="flex flex-col justify-start items-start gap-2 h-full max-w-[70rem] pt-20 pb-5 lg:pt-44 lg:pb-10">
                            <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3 lg:px-10 py-2 rounded-full hello mb-5">
                               Hallo Everyone ..
                            </h1>
@@ -104,7 +104,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                            <div>
                               <Line />
                            </div>
-                           <p className="text-sm text-gray-700 lg:text-base lg:w-[30rem] xl:text-lg xl:w-[30rem] 2xl:w-[40rem] indent-20 paragraph ">
+                           <p className="text-sm text-gray-700 lg:text-base lg:w-[30rem] xl:text-lg xl:w-[30rem] 2xl:w-[50rem] indent-20 paragraph ">
                               I am a passionate Full-Stack Developer and
                               Freelance Web Creator, dedicated to crafting
                               modern, responsive, and high-performance websites.
@@ -152,7 +152,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                            <img
                               src={tablet}
                               alt=""
-                              className="w-[20rem] h-[15rem] xl:h-auto xl:w-[25rem] 2xl:w-[40rem] opacity-20 xl:opacity-100"
+                              className="w-[20rem] h-[15rem] xl:h-auto xl:w-[30rem] 2xl:w-[40rem] opacity-20 xl:opacity-100"
                            />
                         </div>
                      </div>
