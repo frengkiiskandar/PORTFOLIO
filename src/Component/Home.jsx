@@ -8,7 +8,7 @@ import Whatsapp from "./Whatssapp";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import TypingText from "./ChildComponent/TypingText";
-import tablet from '../Assets/Image/tablet.webp'
+import tablet from '../Assets/Image/tablet.png'
 import gsap from "gsap";
 
 // icon 
