@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { InstagramLogo, FacebookLogo, LinkedinLogo, WhatsappLogo, GithubLogo } from '@phosphor-icons/react'
+import { useEffect, useState } from 'react'
+import { InstagramLogo, FacebookLogo, LinkedinLogo, WhatsappLogo, GithubLogo, Image } from '@phosphor-icons/react'
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
@@ -48,6 +48,7 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                             <a href="https://www.linkedin.com/in/frengki-iskandar-00586b235/" target='blank' className='hover:text-oren footerEffect'><LinkedinLogo size={32} weight="thin" /></a>
                             <a href="https://wa.me/6281275691395" target='blank' className='hover:text-oren footerEffect'><WhatsappLogo size={32} weight="thin" /></a>
                             <a href="https://github.com/FrankieRockabilly" target='blank' className='hover:text-oren footerEffect'><GithubLogo size={32} weight="thin" /></a>
+                            <a href="https://drive.google.com/drive/folders/1sJbu_3rhHJ59BC1CdKOXr7bfNirMeqn-" target='blank' className='hover:text-oren footerEffect'><Image size={32} weight="thin" /></a>
                         </div>
                     </div>
 
