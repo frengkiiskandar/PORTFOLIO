@@ -8,7 +8,7 @@ import Whatsapp from "./Whatssapp";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import TypingText from "./ChildComponent/TypingText";
-import tablet from '../Assets/Image/tablet.png'
+import tablet from '../Assets/Image/gua.png'
 import gsap from "gsap";
 
 // icon 
@@ -148,11 +148,11 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                               </div>
                            </div>
                         </div>
-                        <div className=" overflow-hidden hidden xl:block absolute right-0 -bottom-24 xl:top-12 xl:-right-20 2xl:top-20 justify-center items-center framesection ">
+                        <div className=" overflow-hidden hidden xl:block absolute right-0 -bottom-24 top-24 xl:-right-20 2xl:top-20 justify-center items-center framesection ">
                            <img
                               src={tablet}
                               alt=""
-                              className="w-[20rem] h-[15rem] xl:h-auto xl:w-[30rem] 2xl:w-[45rem] opacity-20 xl:opacity-100 "
+                              className="w-[20rem] h-[15rem] xl:h-auto xl:w-[30rem] 2xl:w-[35rem] opacity-20 xl:opacity-100 "
                            />
                         </div>
                      </div>
