@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { InstagramLogo, FacebookLogo, LinkedinLogo, WhatsappLogo, GithubLogo, Image } from '@phosphor-icons/react'
+import { InstagramLogo, FacebookLogo, LinkedinLogo, WhatsappLogo, GithubLogo } from '@phosphor-icons/react'
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
